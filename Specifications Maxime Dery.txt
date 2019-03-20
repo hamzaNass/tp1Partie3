@@ -1,0 +1,8 @@
+1 - afficher toutes les commandes incorrectes avant la facture (terminal et fichier txt)
+	- > Modifier l'affichage de la sortie de sorte que les commandes nulles 
+	    soit afficher dans une section a part, avant la facture.
+2 - Appliquer les taxes
+	- > ajouter les taxes sur la facture en ajoutant un taux de 1.15% 
+3 - Si la facture est a 0$, ne pas afficher dans le fichier de sorties
+	- > Modifier l'affichage de la sortie de sorte que les commandes ayant une valeur de 0$
+	    soit exclu dans lu fichier txt. (Garder dans la console)
