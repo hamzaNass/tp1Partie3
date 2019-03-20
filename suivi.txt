@@ -8,6 +8,6 @@ Maxime :
 
 - Dans les sorties, afficher toutes les commandes incorrectes avant les factures
 
-- vérifier la facture du client si par exemple elle est à 0$
+- vérifier la facture du client si par exemple est à 0$
 
 - Appliquer les taxes
