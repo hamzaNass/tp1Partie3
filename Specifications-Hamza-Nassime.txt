@@ -1,9 +1,9 @@
 1. S'assurer que les commandes sont correctes :
 
-- vérifier si les tests unitaires des coéquipiers ne présentent pas des anomalies et demandez de les corriger
+- vÃ©rifier si les tests unitaires des coÃ©quipiers ne prÃ©sentent pas des anomalies et demandez de les corriger
 
-- implémentez d'autres tests liés aux précédentes fonctionnalités dévoloppées
+- implÃ©mentez d'autres tests liÃ©s aux prÃ©cÃ©dentes fonctionnalitÃ©s dÃ©voloppÃ©es
 
-2. Avoir une facture affichée à l'écran (terminal) et éditée :
+2. Avoir une facture affichÃ©e Ã  l'Ã©cran (terminal) et Ã©ditÃ©e :
 
-- créer 6 tests unitaires pour le programme en utilisant le framework junit
+- s'assurer que l'affichage est toujours conforme aux demandes du client
