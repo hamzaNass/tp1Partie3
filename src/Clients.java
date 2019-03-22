@@ -16,6 +16,11 @@ public class Clients{
 	public String getNom() {
 		return nom;
 	}
+	
+	public void setNom(String nom) {
+		
+		this.nom = nom;
+	}
 
 	public boolean Equals(Clients clientComparer) {
 		return nom.equals( clientComparer.getNom() );
