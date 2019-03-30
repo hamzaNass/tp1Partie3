@@ -13,12 +13,15 @@ import java.util.ArrayList;
 //*********************************************************************
 
 public class mainTp1Partie2 {
+	
 
+        static ArrayList<Clients> listClients = new ArrayList<Clients>();
+		static ArrayList<Plats> listPlats = new ArrayList<Plats>();
+		static ArrayList<Commande> listCommandes = new ArrayList<Commande>();
+		
 	public static void main( String[] args ) {
 		// TODO Auto-generated method stub
-		ArrayList<Clients> listClients = new ArrayList<Clients>();
-		ArrayList<Plats> listPlats = new ArrayList<Plats>();
-		ArrayList<Commande> listCommandes = new ArrayList<Commande>();
+		
 		String nomFicCommande = "fichierCommande.txt";
 		String nomFicFacture = "fichierFacture.txt";
 
@@ -37,33 +40,15 @@ public class mainTp1Partie2 {
 
 				} else if ( ancienneLigne.equals( "Clients" ) ) {
 
-					Clients client = new Clients( ligneActuelle );
-					listClients.add( client );
+					ajouterClient( ligneActuelle );
 
 				} else if ( ancienneLigne.equals( "Plats" ) ) {
 
-					Plats plat = new Plats( ligneActuelle.split( " " )[0],
-							Double.parseDouble( ligneActuelle.split( " " )[1] ) );
-					listPlats.add( plat );
+					ajouterPlat( ligneActuelle );
 
 				} else if ( ancienneLigne.equals( "Commandes" ) ) {
 
-					for ( Clients client : listClients ) {
-
-						if ( client.getNom().equals( ligneActuelle.split( " " )[0] ) ) {
-
-							for ( Plats plat : listPlats ) {
-
-								if ( plat.Equals( ligneActuelle.split( " " )[1] ) ) {
-
-									Commande commande = new Commande( client, plat,
-											Integer.parseInt( ligneActuelle.split( " " )[2] ) );
-									listCommandes.add( commande );
-									break;
-								}
-							}
-						}
-					}
+					ajouterCommande(ligneActuelle);
 				}
 			}
 
@@ -114,6 +99,43 @@ public class mainTp1Partie2 {
 		} catch ( Exception e2 ) {
 			// TODO: handle exception
 		}
+		}
+		
+		public static void ajouterCommande(String ligneActuelle) {
+			
+
+			for ( Clients client : listClients ) {
+
+				if ( client.getNom().equals( ligneActuelle.split( " " )[0] ) ) {
+
+					for ( Plats plat : listPlats ) {
+
+						if ( plat.Equals( ligneActuelle.split( " " )[1] ) ) {
+
+							Commande commande = new Commande( client, plat,
+									Integer.parseInt( ligneActuelle.split( " " )[2] ) );
+							listCommandes.add( commande );
+							break;
+						}
+					}
+			
+		}
 	}
 
+		}
+		
+		public static void ajouterPlat(String ligneActuelle) {
+			
+			Plats plat = new Plats( ligneActuelle.split( " " )[0],
+					Double.parseDouble( ligneActuelle.split( " " )[1] ) );
+			listPlats.add( plat );
+			
+		}
+		
+		public static void ajouterClient(String ligneActuelle) {
+			
+			Clients client = new Clients( ligneActuelle );
+			listClients.add( client );
+			
+		}
 }

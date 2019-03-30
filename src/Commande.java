@@ -41,3 +41,4 @@ public class Commande {
 		return formatter.format(getPlat().getPrix() * getQuantitePlat());
 	}
 }
+
