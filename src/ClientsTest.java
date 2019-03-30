@@ -12,11 +12,13 @@ public class ClientsTest {
 	@Before
 	public void AvantChaqueTest() {
 		client = new Clients( null );
+		
 	}
 	
 	@After
 	public void ApresChaqueTest() {
 		client = null;
+		
 		
 	}
 	
