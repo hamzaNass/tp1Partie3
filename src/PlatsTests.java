@@ -30,7 +30,7 @@ public class PlatsTests {
 	public void testPlatEquals() {
 		plat = new Plats("Jus", 2);
 
-		Assert.assertEquals(plat.Equals("jus"), true);
+		Assert.assertEquals(plat.Equals("Jus"), true);
 
 	}
 
