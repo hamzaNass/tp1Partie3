@@ -37,8 +37,12 @@ public class Commande {
 	}
 
 	public String getFacture() {
+		double prix;
 		NumberFormat formatter = new DecimalFormat("#0.00");
-		return formatter.format(getPlat().getPrix() * getQuantitePlat());
+		prix = getPlat().getPrix() * getQuantitePlat();
+		
+		
+		return formatter.format(Taxe.ajouterTaxes(prix));
 	}
 }
 
