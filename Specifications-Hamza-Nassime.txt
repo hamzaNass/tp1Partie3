@@ -1,0 +1,11 @@
+1. S'assurer que les commandes sont correctes :
+
+- Ajouter les tests unitaires
+
+- vérifier si les tests unitaires des coéquipiers ne présentent pas des anomalies et demandez de les corriger
+
+- implémentez d'autres tests liés aux précédentes fonctionnalités dévoloppées
+
+2. Avoir une facture affichée à l'écran (terminal) et éditée :
+
+- s'assurer que l'affichage est toujours conforme aux demandes du client

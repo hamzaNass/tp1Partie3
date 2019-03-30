@@ -1,6 +1,4 @@
 Bienvenue chez Barette !
-Factures
-Antoine: 33.80$
-Sophie: 0.00$
-Gilles: 6.76$
-Robert: 0.00$
+Factures (Tx. Incl.)
+Antoine: 39.03$
+Gilles: 7.81$
